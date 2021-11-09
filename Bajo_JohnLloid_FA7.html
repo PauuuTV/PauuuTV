@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif; color: white;}
+input[type=text], input[type=password] {
+width: 120%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+button {
+background-color: #04AA6D;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 120%;
+}
+button:hover {
+opacity: 0.8;
+}
+.cancelbtn {
+width: auto;
+padding: 10px 18px;
+background-color: #f44336;
+}
+.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+}
+img.imgDisplay {
+width: 10%;
+border-radius: 50%;
+}
+.container {
+padding: 16px;
+}
+span.psw {
+float: right;
+padding-top: 16px;
+}
+body {
+background-image: url('https://instructure-uploads-apse1.s3-ap-southeast-1.amazonaws.com/account_98220000000000001/attachments/2/bg2.jpg?AWSAccessKeyId=AKIAIDDUVOH2KGZFBNAQ&Expires=1949782073&Signature=M3%2F62xgXrP0XPaLngXD1nidfIYM%3D&response-cache-control=Cache-Control%3Amax-age%3D473364000.0%2C%20public&response-expires=473364000.0');
+}
+hr{
+width:25%;
+}
+.tab {
+overflow: hidden;
+border: 1px solid #ccc;
+background-color: #f1f1f1;
+}
+a{
+color:white;
+}
+</style>
+</head>
+<body>
+<center>
+<form method="post">
+<div class="imgcontainer">
+<img src="https://instructure-uploads-apse1.s3-ap-southeast-1.amazonaws.com/account_98220000000000001/attachments/1/feulogo.png?AWSAccessKeyId=AKIAIDDUVOH2KGZFBNAQ&Expires=1949782073&Signature=coqGF5sk0YnCv86vjRlDpp45b9I%3D&response-cache-control=Cache-Control%3Amax-age%3D473364000.0%2C%20public&response-expires=473364000.0" alt="imgDisplay" class="imgDisplay">
+</div>
+<div class="container">
+   <table>
+   <tr><td>Username</td></tr>
+   <tr><td><input type="text" placeholder="Enter Username" name="uname" required></td></tr>
+   <tr><td>Password</td></tr>
+   <tr><td> <input type="password" placeholder="Enter Password" name="psw" required></td></tr>
+   <tr><td><input type="checkbox" checked="checked" name="remember"> Stayed signed in <br>Forgot Password? <br></td><td><button type="submit">Login</button></td></tr>
+       </table>
+<hr>
+</div>
+</form>
+<nav class="nav">
+<a class="nav-link active" aria-current="page" href="#">Help</a>
+<a class="nav-link" href="#">Privacy Policy </a>
+<a class="nav-link" href="#">Acceptable Use Policy</a>
+<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Facebook</a>
+<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Twitter</a>
+</nav>
+</center>
+</body>
+</html>

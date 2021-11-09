@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Sign Up page</title>
+<script>
+function myFunction()
+{
+var un=document.forms["myForm"]["Uname"].value;
+var ph = document.forms["myForm"]["Contact No."].value;
+var pw = document.forms["myForm"]["Password"].value;
+if(un =="student" && ph="123456789" && pw =="12345")
+{
+window.location.href="welcomePage.html";
+}
+else
+{
+alert("Registration Failed");
+}
+}
+</script>
+<style>
+body
+{
+background:#ffcc00;
+}
+.div1
+{
+width:350px;
+margin:auto;
+margin:10 0 0 450px;
+overflow:hidden;
+padding:75px;
+background:#003300;
+}
+h2
+{
+text-align:center;
+padding:10px;
+color:#003300;
+}
+label
+{
+color:white;
+padding-left:10px;
+}
+.inputText
+{
+width:300px;
+height:30px;
+border:none;
+border-radious:2px;
+padding-left:8px;
+}
+#logButton
+{
+width:300px;
+height:30px;
+border-radius:10px;
+padding-left:7px;
+color:blac;
+font-size:16px;
+}
+</style>
+</head>
+<body>
+<h2>Registration Form</h2>
+<div class="div1">
+<form name="myForm" method="post">
+<label>User Name</label>
+<input type="text" name="Uname" class="inputText" placeholder="User Name"><br><br>
+<label>Mobile No</label>
+<input type="text" name="No" class="inputText" placeholder="Phno"><br><br>
+<label>Password</label>
+<input type="password" name="Pass" placeholder="Password"><br><br>
+<button type="submit" name="reg" id="logButton" value="Register"
+onclick="myFunction()">Register</button>
+<br><br>
+</body>
+</html>
